@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    /* para que tenga un alto de todo el viewport */
+    min-height: 100vh;
+
+    background-color: #e1d4e9;
+    /* para que la calculadora este centrada */
+    display: flex;
+    place-items: center;
+    align-items: center;
+}
+
+
+.calcu {
+    /* color toda la calculadora */
+    background-color: #0cbdea;
+    /* color del cero de la pantalla */
+    /* color: rgb(242, 231, 231); */
+    /* ancho de los botones */
+    width: 350px;
+    /* para que tenga el ancho de la pantalla */
+    max-width: 100%;
+    /* para separar en poco los botones */
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    /* para tener 4 columnas exactamente iguales */
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+
+.pant {
+    /* para que ocupe todo el espacio de la pantalla osea que siempre va a ir asta el ultimo */
+    grid-column: 1 / -1;
+    /* color de la pantalla */
+    background-color: #040c72;
+    /* para el tamaño */
+    padding: 1.5rem;
+    font-size: 2rem;
+    /* para que siempre este alineado ala derecha */
+    text-align: center;
+    border-radius: .5rem;
+    /* separarlo mas de los botones */
+    margin-bottom: 1rem;
+/* para tipo de letra y el ancho de la letra */
+    font-family: monospace;
+    font-weight: 600;
+}
+
+
+.boton {
+    /* color de los botones */
+    background-color: #15173c;;
+    color: rgb(230, 11, 11);
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    /* para que esten centrados */
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    /* para que aparezca la manita  */
+    cursor: pointer;
+}
+
+
+.boton:hover {
+    /* color de los botones */
+    background-color: #090c31;
+}
+
+
+#ceroo {
+    grid-column: span 1;
+}
+
+
+#iguall {
+    grid-row: span 2;
+    background-color: #ae0af4;
+}
+
